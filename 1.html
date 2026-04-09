@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#43474b",
+                    "secondary-fixed-dim": "#71dba6",
+                    "inverse-primary": "#b8c3ff",
+                    "tertiary-fixed-dim": "#c3c7cb",
+                    "background": "#fbf8ff",
+                    "on-secondary": "#ffffff",
+                    "on-surface-variant": "#434656",
+                    "surface": "#fbf8ff",
+                    "on-surface": "#191b24",
+                    "secondary": "#006c47",
+                    "on-secondary-fixed-variant": "#005235",
+                    "on-background": "#191b24",
+                    "on-primary-container": "#efefff",
+                    "tertiary-container": "#6a6e71",
+                    "on-primary": "#ffffff",
+                    "primary-container": "#2e5bff",
+                    "on-secondary-container": "#00714b",
+                    "surface-dim": "#d9d9e6",
+                    "surface-container": "#ededfa",
+                    "on-tertiary-fixed": "#181c1f",
+                    "inverse-surface": "#2e303a",
+                    "outline": "#747688",
+                    "primary": "#0040e0",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed": "#002113",
+                    "secondary-fixed": "#8df7c1",
+                    "surface-container-high": "#e7e7f4",
+                    "on-error": "#ffffff",
+                    "surface-container-highest": "#e2e1ef",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#e0e3e7",
+                    "surface-container-low": "#f3f2ff",
+                    "on-primary-fixed-variant": "#0035be",
+                    "secondary-container": "#8af5be",
+                    "surface-bright": "#fbf8ff",
+                    "on-error-container": "#93000a",
+                    "inverse-on-surface": "#f0effd",
+                    "primary-fixed": "#dde1ff",
+                    "surface-variant": "#e2e1ef",
+                    "on-primary-fixed": "#001356",
+                    "outline-variant": "#c4c5d9",
+                    "surface-tint": "#124af0",
+                    "error": "#ba1a1a",
+                    "tertiary": "#525659",
+                    "on-tertiary-container": "#eef1f5",
+                    "primary-fixed-dim": "#b8c3ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    </style>
+<style>
+    body {
+    min-height: max(884px, 100dvh);
+    }
+</style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- Top Navigation -->
+<header class="fixed top-0 w-full z-50 bg-[#fbf8ff]/80 dark:bg-[#191b24]/80 backdrop-blur-xl">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#0040e0]" data-icon="roofing">roofing</span>
+<span class="text-2xl font-bold tracking-tight text-[#191b24]">The Modern Common</span>
+</div>
+<button class="md:hidden p-2 rounded-full hover:bg-[#ededfa] transition-colors">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-[#0040e0] font-bold border-b-2 border-[#0040e0] pb-1" href="#">Browse Services</a>
+<a class="text-[#191b24] opacity-70 hover:bg-[#ededfa] transition-colors duration-300" href="#">Join as Artisan</a>
+<a class="bg-primary text-on-primary px-6 py-2 rounded-xl font-medium transition-transform scale-98 active:scale-95" href="#">Find Services</a>
+</nav>
+</div>
+</header>
+<main class="pt-20 pb-24">
+<!-- Hero Section -->
+<section class="px-6 py-12 md:py-24 text-center max-w-4xl mx-auto">
+<h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 text-on-surface">
+                Trusted Local Services at Your Doorstep
+            </h1>
+<p class="text-lg text-on-surface-variant mb-10 max-w-2xl mx-auto">
+                Connect with the most skilled artisans and professionals in your neighborhood, vetted by your community.
+            </p>
+<!-- Search Bar -->
+<div class="relative max-w-xl mx-auto">
+<div class="bg-surface-container-low p-2 rounded-full flex items-center shadow-sm">
+<div class="flex-1 flex items-center pl-4">
+<span class="material-symbols-outlined text-outline" data-icon="search">search</span>
+<input class="w-full bg-transparent border-none focus:ring-0 text-on-surface placeholder:text-outline py-3 px-3" placeholder="What service do you need?" type="text"/>
+</div>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-full font-semibold transition-transform active:scale-95 flex items-center gap-2">
+<span>Search</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Categories Section -->
+<section class="py-12 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-2xl font-bold">Top Categories</h2>
+<a class="text-primary font-semibold flex items-center gap-1" href="#">View All <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+<div class="grid grid-cols-4 gap-4 md:gap-8 overflow-x-auto pb-4">
+<div class="flex flex-col items-center gap-3 min-w-[80px]">
+<div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-surface-container-highest flex items-center justify-center hover:bg-secondary-container transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-3xl group-hover:text-on-secondary-container" data-icon="plumbing">plumbing</span>
+</div>
+<span class="text-sm font-medium">Plumbers</span>
+</div>
+<div class="flex flex-col items-center gap-3 min-w-[80px]">
+<div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-surface-container-highest flex items-center justify-center hover:bg-secondary-container transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-3xl group-hover:text-on-secondary-container" data-icon="school">school</span>
+</div>
+<span class="text-sm font-medium">Tutors</span>
+</div>
+<div class="flex flex-col items-center gap-3 min-w-[80px]">
+<div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-surface-container-highest flex items-center justify-center hover:bg-secondary-container transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-3xl group-hover:text-on-secondary-container" data-icon="electrical_services">electrical_services</span>
+</div>
+<span class="text-sm font-medium">Electricians</span>
+</div>
+<div class="flex flex-col items-center gap-3 min-w-[80px]">
+<div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-surface-container-highest flex items-center justify-center hover:bg-secondary-container transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-3xl group-hover:text-on-secondary-container" data-icon="local_shipping">local_shipping</span>
+</div>
+<span class="text-sm font-medium">Delivery</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Providers -->
+<section class="py-16 px-6 max-w-7xl mx-auto">
+<h2 class="text-3xl font-bold mb-8">Expert Artisans Near You</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Provider Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group">
+<div class="h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Professional plumber with toolbelt working on a modern sink in a bright minimalist bathroom setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd0tYwoEAV_GCcunOi2FlctCn2ZTZI-jfdJGZHJeUeewr7VxyzV2XC3EztiDnmhjvNemDYkSxNd6A64HhUYiWj1cjvB26TAPA77S5X01BiwODfsGYlZFGgvM2aBfd8GSXd9jBaTcRVR9VxYQm05nzwGNs_LkLyW2Mw3DOJRQuWmhl7uRDUJay8TuLxOeWSb1bfX4Sa86vAFsVnG8QIlOQUxYUQJw0kpD1c5XF-p89-RBkZbe7WHI-ZyzW9l2yTRqpP6-kaHfpk7A"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="text-xl font-bold">Marcus Chen</h3>
+<p class="text-primary text-sm font-medium">Master Plumber</p>
+</div>
+<div class="bg-secondary-container text-on-secondary-container px-2 py-1 rounded-lg flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold">4.9</span>
+</div>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant text-sm mt-4">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base" data-icon="location_on">location_on</span>
+<span>1.2 miles</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base" data-icon="verified">verified</span>
+<span class="font-medium text-secondary">Verified</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Provider Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group">
+<div class="h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Experienced female tutor helping a young student with mathematics in a sunlit modern study room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU3kTPToBPSGM0yLE8zOFN_KzGRcgoH6DoKXEXCsiA5BGCf2D7ObYHHjRUgrtYzqUPGMuv9TJi1BjWI7cBTFkmLQM7sX8Sm1omo2PNUDLCIVdZqCIh73m-eHyqzAZzHCWOPRTEViFP389ZEq-AGYwhlfO1jJ40P9O26VQqhAj7lesw9PrGqDDTvgC41VchKzPQLLKy7sLdvmPDvj4ptbGIJLnphJD2phLBYJ05_4TEdnZvrS_cvO8pCHq1ZaUAkbN8eCDTHc5J8w"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="text-xl font-bold">Sarah Williams</h3>
+<p class="text-primary text-sm font-medium">Academic Tutor</p>
+</div>
+<div class="bg-secondary-container text-on-secondary-container px-2 py-1 rounded-lg flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold">4.8</span>
+</div>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant text-sm mt-4">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base" data-icon="location_on">location_on</span>
+<span>0.8 miles</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base" data-icon="verified">verified</span>
+<span class="font-medium text-secondary">Verified</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Provider Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group">
+<div class="h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Electrician specialist testing a circuit panel with precision tools in a clean professional environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCql2HrQ1m0ggPaJanSsdRh0ugxJXNxRlcLD2iI_-mYeuq4SPsZB9QnYbCGlzGTtQaOb88LRMUSS7KoW0RXZCb9KIMS5Z4lZowiTmaxtWJQG_QfHg19oDCth8-YQEfJJ3ENKtbFjc8NGNLoA5MHD-7zS43E3W7MbrpW2xIDXCETmR1f-DPvFkXlNl9z4qrgg_TmchSJ6bt_SZd2gcsJkdTTmoXHLR5kGpLtB8dRZYUZ1Av8Po9y435IMepImXP5M0MkfQAFz5PbAQ"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="text-xl font-bold">David Okafor</h3>
+<p class="text-primary text-sm font-medium">Licensed Electrician</p>
+</div>
+<div class="bg-secondary-container text-on-secondary-container px-2 py-1 rounded-lg flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold">4.7</span>
+</div>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant text-sm mt-4">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base" data-icon="location_on">location_on</span>
+<span>2.5 miles</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base" data-icon="verified">verified</span>
+<span class="font-medium text-secondary">Verified</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works Section -->
+<section class="py-20 bg-surface-container-low px-6">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">How it works</h2>
+<p class="text-on-surface-variant">Simple steps to neighborhood excellence.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+<div class="relative">
+<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-on-primary mx-auto mb-6 text-2xl font-bold">1</div>
+<h3 class="text-xl font-bold mb-3">Find</h3>
+<p class="text-on-surface-variant">Search by service or browsing artisan profiles in your neighborhood.</p>
+</div>
+<div class="relative">
+<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-on-primary mx-auto mb-6 text-2xl font-bold">2</div>
+<h3 class="text-xl font-bold mb-3">Book</h3>
+<p class="text-on-surface-variant">Choose your time slot and book instantly with transparent pricing.</p>
+</div>
+<div class="relative">
+<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-on-primary mx-auto mb-6 text-2xl font-bold">3</div>
+<h3 class="text-xl font-bold mb-3">Relax</h3>
+<p class="text-on-surface-variant">Enjoy high-quality service delivered straight to your doorstep.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-20 px-6">
+<div class="max-w-5xl mx-auto rounded-3xl overflow-hidden relative p-12 md:p-20 text-center bg-gradient-to-br from-primary to-primary-container text-on-primary">
+<div class="relative z-10">
+<h2 class="text-3xl md:text-5xl font-bold mb-6">Are you an artisan?</h2>
+<p class="text-xl opacity-90 mb-10 max-w-xl mx-auto">Join our community and grow your local business with trusted neighborhood clients.</p>
+<button class="bg-surface text-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-surface-container-low transition-colors transition-transform scale-98 active:scale-95 shadow-lg">
+                        Become a Service Provider
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f3f2ff] py-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-8 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-[#0040e0]" data-icon="roofing">roofing</span>
+<span class="text-lg font-bold text-[#191b24]">The Modern Common</span>
+</div>
+<p class="text-on-surface-variant text-sm">© 2024 The Modern Common. Curating neighborhood excellence.</p>
+</div>
+<div>
+<h4 class="font-bold mb-4 text-[#191b24]">Explore</h4>
+<ul class="space-y-3">
+<li><a class="text-[#191b24] opacity-60 text-sm hover:text-[#0040e0] transition-all" href="#">Browse Services</a></li>
+<li><a class="text-[#191b24] opacity-60 text-sm hover:text-[#0040e0] transition-all" href="#">Join as Artisan</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4 text-[#191b24]">Support</h4>
+<ul class="space-y-3">
+<li><a class="text-[#191b24] opacity-60 text-sm hover:text-[#0040e0] transition-all" href="#">Safety &amp; Trust</a></li>
+<li><a class="text-[#191b24] opacity-60 text-sm hover:text-[#0040e0] transition-all" href="#">Help Center</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4 text-[#191b24]">Community</h4>
+<ul class="space-y-3">
+<li><a class="text-[#191b24] opacity-60 text-sm hover:text-[#0040e0] transition-all" href="#">Local Stories</a></li>
+<li><a class="text-[#191b24] opacity-60 text-sm hover:text-[#0040e0] transition-all" href="#">Neighborhood Forum</a></li>
+</ul>
+</div>
+</div>
+</footer>
+<!-- Mobile Bottom Navigation Shell -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 bg-surface-container-lowest border-none py-2 px-6 flex justify-between items-center z-50 shadow-[0_-4px_20px_rgba(25,27,36,0.04)]">
+<button class="flex flex-col items-center gap-1 text-[#0040e0]">
+<span class="material-symbols-outlined" data-icon="explore" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="text-[10px] font-bold">Explore</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-on-surface-variant opacity-60">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+<span class="text-[10px] font-medium">Search</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-on-surface-variant opacity-60">
+<span class="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
+<span class="text-[10px] font-medium">Bookings</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-on-surface-variant opacity-60">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="text-[10px] font-medium">Profile</span>
+</button>
+</div>
+</body></html>
